@@ -50,12 +50,6 @@
                                 </constraints>
                                 <state key="normal" title="Submit"/>
                             </button>
-                            <pickerView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwy-Ut-epT">
-                                <rect key="frame" x="139" y="402" width="110" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="ixi-6K-0h4"/>
-                                </constraints>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" ambiguous="YES" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oab-vP-PdV">
                                 <rect key="frame" x="166" y="394" width="57" height="21"/>
                                 <constraints>
@@ -65,6 +59,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwy-Ut-epT">
+                                <rect key="frame" x="145" y="447" width="110" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ixi-6K-0h4"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -74,10 +74,15 @@
                             <constraint firstItem="xdP-7C-dch" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="221" id="usL-cR-67t"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerPickerView" destination="gwy-Ut-epT" id="Gw7-3q-CmY"/>
+                        <outlet property="questionLabel" destination="fPg-pQ-M7J" id="ypa-6g-6jL"/>
+                        <outlet property="questionTextView" destination="IDQ-I0-DZG" id="pAK-S3-VyL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="41" y="55"/>
         </scene>
     </scenes>
 </document>
